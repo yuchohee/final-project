@@ -10,8 +10,7 @@ import paho.mqtt.client as mqtt
 MQTT_HOST = "mqtt-dashboard.com"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 60
-MQTT_TOPIC = f"mobile/10/sensing"  # MY_ID에 적절한 식별자를 넣어주세요
-
+MQTT_TOPIC = f"mobile/10/sensing"  
 mqtt_client = mqtt.Client()
 
 def on_connect(client, userdata, flags, rc):
